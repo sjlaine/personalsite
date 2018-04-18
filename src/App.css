@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400');
 * {
-  /*font-family: 'Roboto', sans-serif;*/
+  background-color: #EAEAEA;
 }
-
 .App {
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -32,10 +30,13 @@
 .App-title {
   font-size: 3em;
   align-self: center;
+  background-color: #282828;
 }
 
 .App-subtitle {
   align-self: center;
+  background-color: #282828;
+  font-size: 1.7em;
   border-bottom: 1px solid rgba(255, 182, 193, 0);
 
   -webkit-transition: border 700ms ease;
@@ -49,6 +50,7 @@
 .App-subtitle a {
   text-decoration: none;
   color: #FFB6C1;
+  background-color: #282828;
 }
 
 .App-subtitle:hover {
@@ -59,7 +61,10 @@
 .About {
   display: flex;
   justify-content: center;
-  /*margin-top: 15vh;*/
+}
+
+.About-intro * {
+  background-color: white;
 }
 
 .About-intro {
@@ -69,6 +74,9 @@
   text-align: left;
   margin-right: 10vw;
   width: 40vw;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(255, 182, 193, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 30px;
 }
 
 .About h3 {
@@ -79,6 +87,7 @@
   height: 50vh;
   width: auto;
   margin-left: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .Projects {
@@ -104,9 +113,70 @@ hr {
   width: 65vw;
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /*margin-top: 10vh;*/
   margin-bottom: 10vh;
   z-index: 3;
+}
+
+.Contact {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.Contact-intro * {
+  background-color: white;
+}
+
+.Contact-intro {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  font-weight: 100;
+  text-align: center;
+  width: 40vw;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(255, 182, 193, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 50px 0 50px 0;
+}
+
+.Contact-intro h2 {
+  font-family: 'Poiret One', cursive;
+  font-weight: 300;
+}
+
+.Contact-intro h4 {
+  font-family: 'Poiret One', cursive;
+  font-weight: 100;
+}
+
+.Contact-direct {
+  font-size: 0.7em;
+  font-weight: 300;
+}
+
+.Contact-links {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.Contact-links a {
+  margin: 0 20px 0 20px;
+  text-decoration: none;
+  color: #282828;
+
+  border-bottom: 1.5px solid rgba(255, 182, 193, 0);
+  -webkit-transition: border 700ms ease;
+  -moz-transition: border 700ms ease;
+  -ms-transition: border 700ms ease;
+  -o-transition: border 700ms ease;
+  transition: border 700ms ease;
+}
+
+.Contact-links a:hover {
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 182, 193, 1);
 }
 
 @keyframes App-logo-spin {

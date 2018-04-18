@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import image from './AboutPhoto.png';
 
-export default class Header extends Component {
+export default class About extends Component {
   render() {
     return (
       <div className="About">
