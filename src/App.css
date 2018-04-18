@@ -9,20 +9,24 @@
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  color: #282828;
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #282828;
   height: 15vh;
   padding: 1vh;
   color: #FFB6C1;
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   font-family: 'Poiret One', cursive;
 }
 
 .App-body {
-  margin-top: 15vh;
+  margin-top: 32vh;
 }
 
 .App-title {
@@ -62,17 +66,13 @@
   display: flex;
   align-self: center;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
+  margin-right: 10vw;
+  width: 40vw;
 }
 
 .About h3 {
   font-weight: 400;
-}
-
-.About p {
-  padding: 40px;
-  margin-right: 30px;
-  text-align: left;
 }
 
 .AboutPhoto {
@@ -81,8 +81,23 @@
   margin-left: 10px;
 }
 
-.Projects h1 {
+.Projects {
+  display: flex;
+  justify-content: space-around;
   font-weight: 300;
+  margin-top: 15vh;
+  height: 67vh;
+}
+
+.Projects-right {
+  width: 40vw;
+  margin-top: -25vh;
+  align-self: center;
+}
+
+hr {
+  border-top: 2px solid #FFB6C1;
+  border-bottom: 1px solid #282828;
 }
 
 .Resume {

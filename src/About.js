@@ -9,12 +9,19 @@ export default class Header extends Component {
           <h3>
             Hello, there! My name is Sarah.
           </h3>
+          <br />
           <p>
             I'm a rock climber turned software engineer,
-            <br />
             recently graduated from Fullstack Academy in NYC.
           </p>
-          </div>
+          <br />
+          <p>
+            In my previous position as a route setter at Brooklyn Boulders,
+            I designed indoor rock climbs, and focused on the intersection
+            of design and functionality. I am excited to bring these skills
+            to the software engineering field!
+          </p>
+        </div>
         <img className="AboutPhoto" src={image} alt="AboutPhoto" />
       </div>
     )
