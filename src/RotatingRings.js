@@ -30,8 +30,13 @@ export default class RotatingRings extends Component {
             </h1>
             <br />
             <p>
-              My first experiment with ThreeJS.
+              My first experiment with Three.js.
             </p>
+            <br />
+            <h3> GitHub Repository: </h3>
+            <a href="https://github.com/sjlaine/RotatingRings">
+              https://github.com/sjlaine/RotatingRings
+            </a>
           </div>
         </div>
       </div>

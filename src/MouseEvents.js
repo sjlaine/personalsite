@@ -24,13 +24,17 @@ export default class MouseEvents extends Component {
         <div className="Projects-right">
           <div className="description">
             <h1 className="Projects-title">
-              MouseEvent Cube
+              MouseEvents Cube
             </h1>
             <br />
             <p>
-              Another experiment in Three.js. Uses the threes.domevents library to make the cube change color on mouseover and click.
+              Another experiment in Three.js. Uses the threex.domevents library to make the cube change color on mouseover and click.
             </p>
-            <NavLink to=""></NavLink>
+            <br />
+            <h3> GitHub Repository: </h3>
+            <a href="https://github.com/sjlaine/cube-mouse-events">
+              https://github.com/sjlaine/cube-mouse-events
+            </a>
           </div>
         </div>
       </div>

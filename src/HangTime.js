@@ -32,6 +32,11 @@ export default class HangTime extends Component {
             <p>
             HangTime is an interval timer made in React Native that allows users to easily create custom timers.
             </p>
+            <br />
+            <h3> GitHub Repository: </h3>
+            <a href="https://github.com/sjlaine/HangTime">
+              https://github.com/sjlaine/HangTime
+            </a>
           </div>
         </div>
       </div>
