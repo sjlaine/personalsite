@@ -21,6 +21,10 @@
   font-family: 'Poiret One', cursive;
 }
 
+.App-body {
+  margin-top: 15vh;
+}
+
 .App-title {
   font-size: 3em;
   align-self: center;
@@ -51,7 +55,7 @@
 .About {
   display: flex;
   justify-content: center;
-  margin-top: 15vh;
+  /*margin-top: 15vh;*/
 }
 
 .About-intro {
@@ -77,11 +81,15 @@
   margin-left: 10px;
 }
 
+.Projects h1 {
+  font-weight: 300;
+}
+
 .Resume {
   width: 65vw;
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-top: 10vh;
+  /*margin-top: 10vh;*/
   margin-bottom: 10vh;
   z-index: 3;
 }

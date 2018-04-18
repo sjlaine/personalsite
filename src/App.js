@@ -4,6 +4,7 @@ import './App.css';
 import Header from './Header';
 import About from './About';
 import Resume from './Resume';
+import Projects from './Projects';
 
 class App extends Component {
   render() {
@@ -12,15 +13,18 @@ class App extends Component {
         <Router>
           <div>
             <Header />
-            <Switch>
-              <Route exact path="/" render={() => <Redirect to="/about" />} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/resume" component={Resume} />
-              {/*
-              <Route exact path="/" component={Projects} />
-              <Route exact path="/" component={Contact} />
-              */}
-            </Switch>
+            <div className="App-body">
+              <Switch>
+                <Route exact path="/" render={() => <Redirect to="/about" />} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/projects" component={Projects} />
+                <Route exact path="/resume" component={Resume} />
+
+                {/*
+                <Route exact path="/" component={Contact} />
+                */}
+              </Switch>
+            </div>
           </div>
         </Router>
       </div>
