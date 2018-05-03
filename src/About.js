@@ -5,6 +5,7 @@ export default class About extends Component {
   render() {
     return (
       <div className="About">
+        <img className="AboutPhoto" src={image} alt="AboutPhoto" />
         <div className="About-intro">
           <h3>
             Hello, there! My name is Sarah.
@@ -22,7 +23,6 @@ export default class About extends Component {
             to the software engineering field!
           </p>
         </div>
-        <img className="AboutPhoto" src={image} alt="AboutPhoto" />
       </div>
     )
   }

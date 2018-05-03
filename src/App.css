@@ -1,42 +1,59 @@
-@import url('https://fonts.googleapis.com/css?family=Poiret+One');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400');
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+
 * {
-  background-color: #EAEAEA;
+  background-color: #f2f2f2;
 }
 .App {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: #282828;
+  color: black;
 }
 
 .App-header {
-  background-color: #282828;
-  height: 15vh;
+  background-color: #f2f2f2;
+  height: 10vh;
   padding: 1vh;
-  color: #FFB6C1;
+  color: black;
   position: fixed;
   top: 0;
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  font-family: 'Poiret One', cursive;
+  justify-content: space-between;
+  font-family: 'Cutive Mono', monospace;
 }
 
 .App-body {
-  margin-top: 32vh;
+  margin-top: 20vh;
 }
 
-.App-title {
-  font-size: 3em;
-  align-self: center;
-  background-color: #282828;
+.App-title a {
+  font-size: 32px;
+  margin-left: 40px;
+
+  -webkit-transition: color 700ms ease;
+  -moz-transition: color 700ms ease;
+  -ms-transition: color 700ms ease;
+  -o-transition: color 700ms ease;
+  transition: color 700ms ease;
+}
+
+.App-title a:hover {
+  color: rgb(2, 178, 204);
 }
 
 .App-subtitle {
+  display: flex;
+  margin-right: 100px;
+}
+
+.App-header h2 {
   align-self: center;
-  background-color: #282828;
-  font-size: 1.7em;
+  align-items: right;
+  margin: 0 15px 0 15px;
+  background-color: #f2f2f2;
+  font-size: 20px;
   border-bottom: 1px solid rgba(255, 182, 193, 0);
 
   -webkit-transition: border 700ms ease;
@@ -47,35 +64,29 @@
 
 }
 
-.App-subtitle a {
+.App-header a {
   text-decoration: none;
-  color: #FFB6C1;
-  background-color: #282828;
+  color: black;
+  background-color: #f2f2f2;
 }
 
-.App-subtitle:hover {
+.App-subtitle h2:hover {
   cursor: pointer;
-  border-bottom: 1px solid rgba(255, 182, 193, 1);
+  border-bottom: 1px solid rgba(2, 178, 204, 1);
 }
 
 .About {
   display: flex;
-  justify-content: center;
-}
-
-.About-intro * {
-  background-color: white;
+  justify-content: left;
+  margin-left: 100px;
 }
 
 .About-intro {
   display: flex;
-  align-self: center;
   flex-direction: column;
   text-align: left;
-  margin-right: 10vw;
+  margin-left: 30px;
   width: 40vw;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(255, 182, 193, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 30px;
 }
 
@@ -86,15 +97,13 @@
 .AboutPhoto {
   height: 50vh;
   width: auto;
-  margin-left: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .Projects {
   display: flex;
   justify-content: space-around;
   font-weight: 300;
-  margin-top: 15vh;
+  margin-top: 32vh;
   height: 67vh;
 }
 
@@ -106,7 +115,7 @@
 
 hr {
   border-top: 2px solid #FFB6C1;
-  border-bottom: 1px solid #282828;
+  /*border-bottom: 1px solid #282828;*/
 }
 
 .Resume {
