@@ -14,15 +14,6 @@ export default class RotatingRings extends Component {
     return (
       <div className="Projects">
         <div className="Projects-left">
-          <div className="video">
-            <YouTube
-              videoId="WAY2DeM-To4"
-              opts={opts}
-              onReady={this._onReady}
-            />
-          </div>
-        </div>
-        <div className="Projects-right">
           <div className="description">
             <h1 className="Projects-title">
               Rotating Rings
@@ -36,6 +27,15 @@ export default class RotatingRings extends Component {
             <a href="https://github.com/sjlaine/RotatingRings">
               https://github.com/sjlaine/RotatingRings
             </a>
+          </div>
+        </div>
+        <div className="Projects-rights">
+          <div className="video">
+            <YouTube
+              videoId="WAY2DeM-To4"
+              opts={opts}
+              onReady={this._onReady}
+            />
           </div>
         </div>
       </div>

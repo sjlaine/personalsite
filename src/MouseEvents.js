@@ -14,13 +14,6 @@ export default class MouseEvents extends Component {
     return (
       <div className="Projects">
         <div className="Projects-left">
-          <YouTube
-            videoId="rJOvYbsXOGI"
-            opts={opts}
-            onReady={this._onReady}
-          />
-        </div>
-        <div className="Projects-right">
           <div className="description">
             <h1 className="Projects-title">
               MouseEvents Cube
@@ -35,6 +28,13 @@ export default class MouseEvents extends Component {
               https://github.com/sjlaine/cube-mouse-events
             </a>
           </div>
+        </div>
+        <div className="Projects-right">
+          <YouTube
+            videoId="rJOvYbsXOGI"
+            opts={opts}
+            onReady={this._onReady}
+          />
         </div>
       </div>
     );

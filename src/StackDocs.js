@@ -14,15 +14,6 @@ export default class StackDocs extends Component {
     return (
       <div className="Projects">
         <div className="Projects-left">
-          <div className="video">
-            <YouTube
-              videoId="qLbGun0nR-k"
-              opts={opts}
-              onReady={this._onReady}
-            />
-          </div>
-        </div>
-        <div className="Projects-right">
           <div className="description">
             <h1 className="Projects-title">
               StackDocs
@@ -42,6 +33,15 @@ export default class StackDocs extends Component {
             <a href="https://github.com/StackDocs/StackDocs">
               https://github.com/StackDocs/StackDocs
             </a>
+          </div>
+        </div>
+        <div className="Projects-right">
+          <div className="video">
+            <YouTube
+              videoId="qLbGun0nR-k"
+              opts={opts}
+              onReady={this._onReady}
+            />
           </div>
         </div>
       </div>

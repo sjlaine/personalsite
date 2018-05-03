@@ -8,11 +8,8 @@ import RotatingRings from './RotatingRings';
 const Projects = () => (
   <div>
     <StackDocs />
-    <hr />
     <HangTime />
-    <hr />
     <MouseEvents />
-    <hr />
     <RotatingRings />
   </div>
 );

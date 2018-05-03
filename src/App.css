@@ -103,19 +103,18 @@
   display: flex;
   justify-content: space-around;
   font-weight: 300;
-  margin-top: 32vh;
-  height: 67vh;
+  margin-top: 20vh;
+  height: 50vh;
 }
 
-.Projects-right {
+/*.Projects > div {
+  display: flex-column;
+  align-items: flex-start;
+}*/
+
+.Projects-left {
   width: 40vw;
-  margin-top: -25vh;
-  align-self: center;
-}
-
-hr {
-  border-top: 2px solid #FFB6C1;
-  /*border-bottom: 1px solid #282828;*/
+  text-align: left;
 }
 
 .Resume {
