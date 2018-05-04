@@ -4,7 +4,6 @@ import './App.css';
 import Header from './Header';
 import About from './About';
 import Projects from './Projects';
-import Contact from './Contact';
 
 class App extends Component {
   render() {
@@ -18,7 +17,6 @@ class App extends Component {
                 <Route exact path="/" render={() => <Redirect to="/about" />} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/projects" component={Projects} />
-                <Route exact path="/contact" component={Contact} />
               </Switch>
             </div>
           </div>

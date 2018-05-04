@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400');
+/*font-family: 'Roboto', sans-serif;*/
 @import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+/*font-family: 'Cutive Mono', monospace;*/
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,600');
+/*font-family: 'Work Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+/*font-family: 'Questrial', sans-serif;*/
+
 
 * {
   background-color: #f2f2f2;
@@ -21,15 +28,15 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Questrial', sans-serif;
 }
 
 .App-body {
-  margin-top: 20vh;
+  margin-top: 25vh;
 }
 
 .App-title a {
-  font-size: 32px;
+  font-size: 23px;
   margin-left: 40px;
 
   -webkit-transition: color 700ms ease;
@@ -53,7 +60,7 @@
   align-items: right;
   margin: 0 15px 0 15px;
   background-color: #f2f2f2;
-  font-size: 20px;
+  font-size: 18px;
   border-bottom: 1px solid rgba(255, 182, 193, 0);
 
   -webkit-transition: border 700ms ease;
@@ -75,19 +82,42 @@
   border-bottom: 1px solid rgba(2, 178, 204, 1);
 }
 
+.Projects {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 300;
+  margin-top: 20vh;
+  height: 50vh;
+}
+
+.Projects-left {
+  width: 40vw;
+  text-align: left;
+}
+
+.Projects-left h1 {
+  font-size: 60px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+.Projects-right img {
+  height: 390px;
+  width: 640px;
+}
+
 .About {
   display: flex;
-  justify-content: left;
-  margin-left: 100px;
+  justify-content: center;
 }
 
 .About-intro {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 30px;
+  margin-left: 40px;
   width: 40vw;
-  padding: 30px;
+  line-height: 35px;
 }
 
 .About h3 {
@@ -99,68 +129,39 @@
   width: auto;
 }
 
-.Projects {
-  display: flex;
-  justify-content: space-around;
-  font-weight: 300;
-  margin-top: 20vh;
-  height: 50vh;
+.description a {
+  color: rgb(2, 178, 204);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 182, 193, 0);
+  margin-top: 10px;
+
+  -webkit-transition: border 700ms ease;
+  -moz-transition: border 700ms ease;
+  -ms-transition: border 700ms ease;
+  -o-transition: border 700ms ease;
+  transition: border 700ms ease;
 }
 
-/*.Projects > div {
-  display: flex-column;
-  align-items: flex-start;
-}*/
-
-.Projects-left {
-  width: 40vw;
-  text-align: left;
-}
-
-.Resume {
-  width: 65vw;
-  height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 10vh;
-  z-index: 3;
+.description a:hover {
+  border-bottom: 1px solid rgba(2, 178, 204, 1);
 }
 
 .Contact {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  font-size: 2em;
-}
-
-.Contact-intro * {
-  background-color: white;
-}
-
-.Contact-intro {
-  display: flex;
-  align-self: center;
-  flex-direction: column;
-  font-weight: 100;
+  display: flex-column;
+  text-align: left;
+  font-size: 20px;
   text-align: center;
-  width: 40vw;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(255, 182, 193, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 50px 0 50px 0;
-}
-
-.Contact-intro h2 {
-  font-family: 'Poiret One', cursive;
-  font-weight: 300;
-}
-
-.Contact-intro h4 {
-  font-family: 'Poiret One', cursive;
-  font-weight: 100;
+  font-weight: bolder;
 }
 
 .Contact-direct {
-  font-size: 0.7em;
-  font-weight: 300;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 20px;
+}
+
+.Contact-direct p {
+  margin-left: 10px;
 }
 
 .Contact-links {
@@ -173,8 +174,9 @@
   margin: 0 20px 0 20px;
   text-decoration: none;
   color: #282828;
+  font-size: 25px;
 
-  border-bottom: 1.5px solid rgba(255, 182, 193, 0);
+  border-bottom: 1.5px solid rgba(2, 178, 204, 0);
   -webkit-transition: border 700ms ease;
   -moz-transition: border 700ms ease;
   -ms-transition: border 700ms ease;
@@ -184,7 +186,7 @@
 
 .Contact-links a:hover {
   cursor: pointer;
-  border-bottom: 1px solid rgba(255, 182, 193, 1);
+  border-bottom: 1px solid rgba(2, 178, 204, 1);
 }
 
 @keyframes App-logo-spin {

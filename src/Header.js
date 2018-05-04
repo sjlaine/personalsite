@@ -13,17 +13,12 @@ export default class Header extends Component {
         <div className="App-subtitle">
           <h2>
             <NavLink to="/projects">
-              Projects
+              PROJECTS
             </NavLink>
           </h2>
           <h2>
             <NavLink to="/about">
-              About
-            </NavLink>
-          </h2>
-          <h2>
-            <NavLink to="/contact">
-              Contact
+              ABOUT
             </NavLink>
           </h2>
         </div>
