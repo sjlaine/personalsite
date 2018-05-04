@@ -16,10 +16,7 @@ export default class About extends Component {
           </div>
           <br />
           <div className="Contact-direct">
-          <h3>e.</h3><p>sjlaine624@gmail.com</p>
-          </div>
-          <div className="Contact-direct">
-          <h3>p.</h3><p>516-972-2849</p>
+            <h3>e.</h3><p>sjlaine624@gmail.com</p>
           </div>
         </div>
         <div className="About-intro">
