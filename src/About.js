@@ -23,22 +23,41 @@ export default class About extends Component {
           </div>
         </div>
         <div className="About-intro">
-          <h3>
+          <h1>
             Hello, there! My name is Sarah.
-          </h3>
-          <br />
+          </h1>
           <p>
             I'm a rock climber turned software engineer,
             recently graduated from Fullstack Academy in NYC.
             I'm based in Brooklyn, NY.
           </p>
-          <br />
           <p>
             In my previous position as a route setter at Brooklyn Boulders,
             I designed indoor rock climbs, and focused on the intersection
             of design and functionality. I am excited to bring these skills
             to the software engineering field!
           </p>
+          <div className="About-skills">
+            <h2>Technical Skills </h2>
+            <h3>
+              Proficient
+            </h3>
+            <p>
+              JavaScript, Node.js, React, Sequelize, HTML, CSS, Express, Git
+            </p>
+            <h3>
+              Knowledgeable
+            </h3>
+            <p>
+              React Native, Three.js, Firebase, Mocha
+            </p>
+            <h3>
+              Some Experience
+            </h3>
+            <p>
+              SQL, Heroku
+            </p>
+        </div>
         </div>
       </div>
     )
