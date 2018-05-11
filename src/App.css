@@ -107,21 +107,14 @@
 }
 
 .About {
-  display: flex;
-  justify-content: center;
+  /*display: flex;*/
 }
 
 .About-intro {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-left: 40px;
-  width: 40vw;
   line-height: 35px;
 }
 
 .About-intro p {
-  margin-top: 15px;
 }
 
 .About h3 {
@@ -133,29 +126,12 @@
   width: auto;
 }
 
-.description a {
-  color: rgb(2, 178, 204);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255, 182, 193, 0);
-  margin-top: 10px;
-
-  -webkit-transition: border 700ms ease;
-  -moz-transition: border 700ms ease;
-  -ms-transition: border 700ms ease;
-  -o-transition: border 700ms ease;
-  transition: border 700ms ease;
-}
-
-.description a:hover {
-  border-bottom: 1px solid rgba(2, 178, 204, 1);
-}
-
 .About-skills {
   margin-top: 50px;
 }
 
 .Contact {
-  display: flex-column;
+  display: flex;
   text-align: left;
   font-size: 20px;
   text-align: center;
@@ -164,6 +140,7 @@
 
 .Contact-direct {
   display: flex;
+  justify-content: center;
   align-items: flex-end;
   margin-left: 20px;
 }
@@ -197,7 +174,19 @@
   border-bottom: 1px solid rgba(2, 178, 204, 1);
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.description a {
+  color: rgb(2, 178, 204);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 182, 193, 0);
+  margin-top: 10px;
+
+  -webkit-transition: border 700ms ease;
+  -moz-transition: border 700ms ease;
+  -ms-transition: border 700ms ease;
+  -o-transition: border 700ms ease;
+  transition: border 700ms ease;
+}
+
+.description a:hover {
+  border-bottom: 1px solid rgba(2, 178, 204, 1);
 }
