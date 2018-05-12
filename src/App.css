@@ -19,8 +19,8 @@
 }
 
 .App-header {
-  background-color: #f2f2f2;
-  height: 10vh;
+  background-color: rgba(242, 242, 242, 1);
+  height: 70px;
   padding: 1vh;
   color: black;
   position: fixed;
@@ -59,7 +59,7 @@
   align-self: center;
   align-items: right;
   margin: 0 15px 0 15px;
-  background-color: #f2f2f2;
+  /*background-color: #f2f2f2;*/
   font-size: 18px;
   border-bottom: 1px solid rgba(255, 182, 193, 0);
 
@@ -74,7 +74,7 @@
 .App-header a {
   text-decoration: none;
   color: black;
-  background-color: #f2f2f2;
+  /*background-color: #f2f2f2;*/
 }
 
 .App-subtitle h2:hover {
@@ -109,8 +109,9 @@
 .About {
   display: grid;
   grid-template-columns: 10% 40% 40% 10%;
-  grid-template-rows: 60vh 50vh 70vh;
+  grid-template-rows: 500px 500px 700px;
   text-align: left;
+  line-height: 30px;
 }
 
 .About-intro {
