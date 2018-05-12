@@ -157,10 +157,10 @@
 }
 
 .Contact-links a {
-  margin: 0 20px 0 0;
+  margin: 0 40px 0 0;
   text-decoration: none;
   color: #282828;
-  font-size: 25px;
+  font-size: 30px;
 
   border-bottom: 1.5px solid rgba(2, 178, 204, 0);
   -webkit-transition: border 700ms ease;
