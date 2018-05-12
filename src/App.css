@@ -107,56 +107,57 @@
 }
 
 .About {
-  /*display: flex;*/
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: 60vh 50vh 70vh;
+  text-align: left;
 }
 
 .About-intro {
-  line-height: 35px;
+  grid-column-start: 3;
+  grid-row-start: 1;
 }
 
-.About-intro p {
+.About-intro h1 {
+  margin-bottom: 30px;
 }
 
 .About h3 {
   font-weight: 400;
+  margin-top: 15px;
 }
 
 .AboutPhoto {
-  height: 50vh;
+  height: 450px;
   width: auto;
-}
-
-.About-skills {
-  margin-top: 50px;
+  grid-column-start: 2;
+  grid-row-start: 1;
 }
 
 .Contact {
-  display: flex;
+  margin-top: 30px;
   text-align: left;
   font-size: 20px;
-  text-align: center;
   font-weight: bolder;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .Contact-direct {
+  margin-top: 20px;
   display: flex;
-  justify-content: center;
   align-items: flex-end;
-  margin-left: 20px;
 }
 
 .Contact-direct p {
   margin-left: 10px;
 }
 
-.Contact-links {
-  display: flex;
-  align-self: center;
-  justify-content: space-between;
-}
-
 .Contact-links a {
-  margin: 0 20px 0 20px;
+  margin: 0 20px 0 0;
   text-decoration: none;
   color: #282828;
   font-size: 25px;
@@ -172,6 +173,62 @@
 .Contact-links a:hover {
   cursor: pointer;
   border-bottom: 1px solid rgba(2, 178, 204, 1);
+}
+
+.About-skills {
+  padding-top: 60px;
+  grid-column: 2;
+  grid-row-start: 2;
+  border-top: 1px solid rgba(2, 178, 204, 1);
+}
+
+.About-skills h2 {
+  margin-bottom: 20px;
+}
+
+.About-skills h3 {
+  margin: 0 0 10px 20px;
+}
+
+.About-skills p {
+  margin: 10px 0 25px 20px;
+}
+
+.About-education {
+  padding-top: 60px;
+  grid-column: 3;
+  grid-row-start: 2;
+  padding-left: 20px;
+  border-top: 1px solid rgba(2, 178, 204, 1);
+}
+
+.About-education h4 {
+  margin-left: 20px;
+}
+
+.About-education p {
+  margin-left: 40px;
+}
+
+.About-work {
+  padding: 40px 0 0 30px;
+  border-top: 1px solid rgba(2, 178, 204, 1);
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+}
+
+.About-work h3 {
+  margin-left: 25px;
+}
+
+.About-work h4 {
+  margin: 20px 0 10px 50px;
+}
+
+.About-work li {
+  margin-left: 90px;
+  list-style-type: circle;
 }
 
 .description a {

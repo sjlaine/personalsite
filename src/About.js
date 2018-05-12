@@ -21,15 +21,20 @@ export default class About extends Component {
             of design and functionality. I am excited to bring these skills
             to the software engineering field!
           </p>
-          </div>
           <br />
-          <div className="Contact-links">
-            <a href="https://github.com/sjlaine">Github</a>
-            <a href="https://www.linkedin.com/in/sarah-laine/">LinkedIn</a>
-            <a href="https://angel.co/sarah-laine">AngelList</a>
+          <div className="Contact">
+            <div className="Contact-links">
+              <a href="https://github.com/sjlaine">Github</a>
+              <a href="https://www.linkedin.com/in/sarah-laine/">LinkedIn</a>
+              <a href="https://angel.co/sarah-laine">AngelList</a>
+            </div>
+            <div className="Contact-direct">
+              <h3>email:</h3>
+              <p>sjlaine624@gmail.com</p>
+            </div>
           </div>
-          <h3>email:</h3>
-          <p>sjlaine624@gmail.com</p>
+        </div>
+        <div className="About-skills">
           <h2>Technical Skills </h2>
           <h3>
             Proficient
@@ -49,10 +54,13 @@ export default class About extends Component {
           <p>
             SQL, Heroku
           </p>
+        </div>
+        <div className="About-education">
           <h2>Education</h2>
           <h3>
             Fullstack Academy
           </h3>
+          <h4>Software Engineering Immersive</h4>
           <p>
             At Fullstack Academy, I learned both front-end and back-end development
             in JavaScript. This three-month bootcamp focused on the NERD stack:
@@ -66,6 +74,8 @@ export default class About extends Component {
           <p>
             B.A. in Dance and Pre-Medicine, Class of 2013
           </p>
+        </div>
+        <div className="About-work">
           <h2>
             Work Experience
           </h2>
@@ -105,7 +115,8 @@ export default class About extends Component {
               Co-created and instructed a new Women Only climbing program.
             </li>
           </ul>
-    </div>
+        </div>
+      </div>
     )
   }
 }
