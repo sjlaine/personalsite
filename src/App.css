@@ -211,7 +211,7 @@
 }
 
 .About-work {
-  padding: 40px 0 0 30px;
+  padding: 40px 0 0 0;
   border-top: 1px solid rgba(2, 178, 204, 1);
   grid-column-start: 2;
   grid-column-end: 4;
