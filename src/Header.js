@@ -16,11 +16,6 @@ export default class Header extends Component {
               PROJECTS
             </NavLink>
           </h2>
-          <h2>
-            <NavLink to="/about">
-              ABOUT
-            </NavLink>
-          </h2>
         </div>
       </header>
     )

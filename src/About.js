@@ -5,32 +5,42 @@ export default class About extends Component {
   render() {
     return (
       <div className="About">
-        <img className="AboutPhoto" src={image} alt="AboutPhoto" />
-        <div className="About-intro">
-          <h1>
-            Hello, there! My name is Sarah.
-          </h1>
-          <p>
-            I'm a rock climber turned software engineer,
-            recently graduated from Fullstack Academy in NYC.
-            I'm based in Brooklyn, NY.
-          </p>
-          <p>
-            In my previous position as a route setter at Brooklyn Boulders,
-            I designed indoor rock climbs, and focused on the intersection
-            of design and functionality. I am excited to bring these skills
-            to the software engineering field!
-          </p>
-          <br />
-          <div className="Contact">
-            <div className="Contact-links">
-              <a href="https://github.com/sjlaine">Github</a>
-              <a href="https://www.linkedin.com/in/sarah-laine/">LinkedIn</a>
-              <a href="https://angel.co/sarah-laine">AngelList</a>
+        <div className="About-top">
+          <div className="AboutPhoto">
+            <img className="image" src={image} alt="AboutPhoto" />
+            <label>Photo: Emily Frank</label>
+          </div>
+          <div className="About-intro">
+            <div className="About-title">
+              <h1>
+                Hello, there!
+              </h1>
+              <h1>
+                My name is Sarah.
+              </h1>
             </div>
-            <div className="Contact-direct">
-              <h3>email:</h3>
-              <p>sjlaine624@gmail.com</p>
+            <p>
+              I'm a rock climber turned software engineer,
+              recently graduated from Fullstack Academy in NYC.
+              I'm based in Brooklyn, NY.
+            </p>
+            <p>
+              In my previous position as a route setter at Brooklyn Boulders,
+              I designed indoor rock climbs, and focused on the intersection
+              of design and functionality. I am excited to bring these skills
+              to the software engineering field!
+            </p>
+            <br />
+            <div className="Contact">
+              <div className="Contact-links">
+                <a href="https://github.com/sjlaine">Github</a>
+                <a href="https://www.linkedin.com/in/sarah-laine/">LinkedIn</a>
+                <a href="https://angel.co/sarah-laine">AngelList</a>
+              </div>
+              <div className="Contact-direct">
+                <h3>email:</h3>
+                <p>sjlaine624@gmail.com</p>
+              </div>
             </div>
           </div>
         </div>
@@ -55,7 +65,7 @@ export default class About extends Component {
             SQL, Heroku
           </p>
         </div>
-        <div className="About-education">
+        <div className="About-skills">
           <h2>Education</h2>
           <h3>
             Fullstack Academy
@@ -71,11 +81,11 @@ export default class About extends Component {
           <h3>
             Washington University in St. Louis
           </h3>
-          <p>
+          <h4>
             B.A. in Dance and Pre-Medicine, Class of 2013
-          </p>
+          </h4>
         </div>
-        <div className="About-work">
+        <div className="About-skills">
           <h2>
             Work Experience
           </h2>

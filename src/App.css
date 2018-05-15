@@ -9,7 +9,8 @@
 
 
 * {
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 1);
+  position: relative;
 }
 .App {
   text-align: center;
@@ -19,11 +20,10 @@
 }
 
 .App-header {
-  background-color: rgba(242, 242, 242, 1);
+  background-color: rgba(242, 242, 242, 0);
   height: 70px;
   padding: 1vh;
   color: black;
-  position: fixed;
   top: 0;
   width: 100%;
   display: flex;
@@ -32,7 +32,8 @@
 }
 
 .App-body {
-  margin-top: 25vh;
+  margin-top: 15vh;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .App-title a {
@@ -59,7 +60,6 @@
   align-self: center;
   align-items: right;
   margin: 0 15px 0 15px;
-  /*background-color: #f2f2f2;*/
   font-size: 18px;
   border-bottom: 1px solid rgba(255, 182, 193, 0);
 
@@ -74,7 +74,6 @@
 .App-header a {
   text-decoration: none;
   color: black;
-  /*background-color: #f2f2f2;*/
 }
 
 .App-subtitle h2:hover {
@@ -107,20 +106,36 @@
 }
 
 .About {
-  display: grid;
-  grid-template-columns: 10% 40% 40% 10%;
-  grid-template-rows: 500px 500px 700px;
   text-align: left;
   line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.About-top {
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70vw;
+  padding-bottom: 100px;
 }
 
 .About-intro {
-  grid-column-start: 3;
-  grid-row-start: 1;
+  flex-basis: 50%;
+  margin: 10px 0 0 0;
+}
+
+.About-title {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .About-intro h1 {
   margin-bottom: 30px;
+  padding-right: 10px;
+  line-height: 40px;
 }
 
 .About h3 {
@@ -129,10 +144,19 @@
 }
 
 .AboutPhoto {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.AboutPhoto img {
   height: 450px;
-  width: auto;
-  grid-column-start: 2;
-  grid-row-start: 1;
+  width: 471.11px;
+}
+
+.AboutPhoto label {
+  margin-top: 5px;
+  font-size: 15px;
 }
 
 .Contact {
@@ -140,8 +164,7 @@
   text-align: left;
   font-size: 20px;
   font-weight: bolder;
-  grid-column-start: 3;
-  grid-row-start: 1;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,58 +200,30 @@
 }
 
 .About-skills {
-  padding-top: 60px;
-  grid-column: 2;
-  grid-row-start: 2;
+  padding: 60px;
   border-top: 1px solid rgba(2, 178, 204, 1);
 }
 
 .About-skills h2 {
-  margin-bottom: 20px;
+  padding: 0 0 20px 40px;
 }
 
 .About-skills h3 {
-  margin: 0 0 10px 20px;
+  padding: 0 0 20px 60px;
+}
+
+.About-skills h4 {
+  padding: 10px 0 0 80px;
+  font-weight: normal;
 }
 
 .About-skills p {
-  margin: 10px 0 25px 20px;
+  padding: 10px 0 25px 100px;
+  width: 80vw;
 }
 
-.About-education {
-  padding-top: 60px;
-  grid-column: 3;
-  grid-row-start: 2;
-  padding-left: 20px;
-  border-top: 1px solid rgba(2, 178, 204, 1);
-}
-
-.About-education h4 {
-  margin-left: 20px;
-}
-
-.About-education p {
-  margin-left: 40px;
-}
-
-.About-work {
-  padding: 40px 0 0 0;
-  border-top: 1px solid rgba(2, 178, 204, 1);
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 3;
-}
-
-.About-work h3 {
-  margin-left: 25px;
-}
-
-.About-work h4 {
-  margin: 20px 0 10px 50px;
-}
-
-.About-work li {
-  margin-left: 90px;
+.About-skills li {
+  margin-left: 120px;
   list-style-type: circle;
 }
 
@@ -247,4 +242,68 @@
 
 .description a:hover {
   border-bottom: 1px solid rgba(2, 178, 204, 1);
+}
+
+@media only screen and (max-width : 600px) {
+  .App-body {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .About {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .About-top {
+    justify-content: center;
+  }
+
+  .AboutPhoto img {
+    width: 90vw;
+    height: auto;
+    align-self: center;
+  }
+
+  .About-title {
+    justify-content: center;
+  }
+
+  .About-skills {
+    width: 70vw;
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  .About-skills h2 {
+    margin: 0;
+  }
+
+  .About-skills h3 {
+    margin: 0;
+  }
+
+  .About-skills h4 {
+    margin: 0;
+  }
+
+  .About-skills p {
+    margin-left: 5px;
+  }
+
+  .About-skills li {
+    margin-left: 5px;
+  }
+
+  .Contact-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Contact-links a {
+    margin-top: 15px;
+    align-self: center;
+  }
+
 }
