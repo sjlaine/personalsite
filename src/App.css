@@ -27,6 +27,7 @@
   top: 0;
   width: 100%;
   display: flex;
+  flex-wrap: flex;
   justify-content: space-between;
   font-family: 'Questrial', sans-serif;
 }
@@ -83,15 +84,19 @@
 
 .Projects {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   font-weight: 300;
-  margin-top: 20vh;
-  height: 50vh;
+  margin: 40px 0;
+  height: 500px;
 }
 
 .Projects-left {
   width: 40vw;
   text-align: left;
+  display: flex;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
 }
 
 .Projects-left h1 {
@@ -261,7 +266,7 @@
   }
 
   .AboutPhoto img {
-    width: 90vw;
+    width: 95vw;
     height: auto;
     align-self: center;
   }
@@ -271,29 +276,42 @@
   }
 
   .About-skills {
-    width: 70vw;
-    padding: 20px 0;
+    width: 90vw;
     margin: 0;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
   }
 
   .About-skills h2 {
     margin: 0;
+    text-align: left;
+    padding: 0 0 10px 0;
   }
 
   .About-skills h3 {
     margin: 0;
+    text-align: left;
+    padding: 0;
   }
 
   .About-skills h4 {
     margin: 0;
+    text-align: left;
+    padding: 20px 0 5px 0;
   }
 
   .About-skills p {
-    margin-left: 5px;
+    align-self: center;
+    text-align: left;
+    padding: 0;
   }
 
   .About-skills li {
-    margin-left: 5px;
+    margin-left: 10px;
+    text-align: left;
+    padding: 0;
+    list-style-position: inside;
   }
 
   .Contact-links {
@@ -302,8 +320,52 @@
   }
 
   .Contact-links a {
-    margin-top: 15px;
+    margin: 15px 0;
     align-self: center;
+  }
+
+  .Projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+
+    height: auto;
+    border-top: 1px solid rgba(2, 178, 204, 1);
+    padding-top: 20px;
+  }
+
+  .Projects-left {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+
+  .description {
+    width: 100vw;
+  }
+
+  .Projects-title h1 {
+    font-size: 20px;
+    overflow-wrap: normal;
+  }
+
+  .Projects-left a {
+    overflow-wrap: break-word;
+  }
+
+  .Projects-right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+
+  .Projects-right img {
+    width: 95%;
+    height: auto;
+
+    margin: 5px;
   }
 
 }
