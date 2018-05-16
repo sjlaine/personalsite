@@ -95,7 +95,6 @@
   width: 40vw;
   text-align: left;
   display: flex;
-  /*flex-direction: column;*/
   flex-wrap: wrap;
 }
 
@@ -345,8 +344,8 @@
     width: 100vw;
   }
 
-  .Projects-title h1 {
-    font-size: 20px;
+  .Projects-left h1 {
+    font-size: 30px;
     overflow-wrap: normal;
   }
 
