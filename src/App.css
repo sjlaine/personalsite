@@ -270,8 +270,19 @@
     align-self: center;
   }
 
+  .AboutPhoto label {
+    font-size: 10px;
+    text-align: left;
+  }
+
   .About-title {
     justify-content: center;
+    margin-top: 15px;
+  }
+
+  .About-title h1 {
+    line-height: 2px;
+    font-size: 30px;
   }
 
   .About-skills {
@@ -341,7 +352,7 @@
   }
 
   .description {
-    width: 100vw;
+    width: 90vw;
   }
 
   .Projects-left h1 {
