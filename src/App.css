@@ -248,7 +248,7 @@
   border-bottom: 1px solid rgba(2, 178, 204, 1);
 }
 
-@media only screen and (max-width : 1000px) {
+@media only screen and (max-width : 1200px) {
   .App-header {
     margin-top: 10px;
     flex-direction: column;
